@@ -5,14 +5,14 @@ Este proyecto contiene ejemplos de cómo manejar contraseñas de manera segura e
 ### Métodos Incluidos
 
 1. **Encriptado con SHA-512 y Sal**
-   - Archivo: `encriptado.py`
-   - Este método utiliza SHA-512 para encriptar contraseñas y un valor de sal (salt) para mejorar la seguridad.
+    - Archivo: `encriptado.py`
+    - Este método utiliza SHA-512 para encriptar contraseñas y un valor de sal (salt) para mejorar la seguridad.
 
-> **Nota:** En la base de datos debes guardar tanto la contraseña encriptada como el valor de la sal (`salt`).
+    > **Nota:** En la base de datos debes guardar tanto la contraseña encriptada como el valor de la sal (`salt`).
 
 2. **Encriptado con bcrypt**
-   - Archivo: `encriptado_bcrypt.py`
-   - Este método utiliza la biblioteca `bcrypt`, que maneja automáticamente la generación de sal y es más resistente a ataques de fuerza bruta.
+    - Archivo: `encriptado_bcrypt.py`
+    - Este método utiliza la biblioteca `bcrypt`, que maneja automáticamente la generación de sal y es más resistente a ataques de fuerza bruta.
 
 ### Requisitos
 
@@ -20,5 +20,4 @@ Para ejecutar los ejemplos, asegúrate de tener instaladas las siguientes biblio
 
 ```bash
 pip install bcrypt
-
 ```
